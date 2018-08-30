@@ -1,0 +1,12 @@
+Source: ros-lunar-people-msgs
+Section: misc
+Priority: extra
+Maintainer: Dan Lazewatsky <dan@lazewatsky.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin, ros-lunar-geometry-msgs, ros-lunar-message-generation, ros-lunar-std-msgs
+Homepage: http://ros.org/wiki/people_msgs
+Standards-Version: 3.9.2
+
+Package: ros-lunar-people-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-geometry-msgs, ros-lunar-message-runtime, ros-lunar-std-msgs
+Description: Messages used by nodes in the people stack.
