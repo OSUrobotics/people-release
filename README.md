@@ -1,3 +1,32 @@
+## people (lunar) - 1.1.2-0
+
+The packages in the `people` repository were released into the `lunar` distro by running `/usr/bin/bloom-release people -r lunar -y` on `Thu, 30 Aug 2018 16:04:41 -0000`
+
+These packages were released:
+- `face_detector`
+- `leg_detector`
+- `people`
+- `people_msgs`
+- `people_tracking_filter`
+- `people_velocity_tracker`
+
+Version of package(s) in repository `people`:
+
+- upstream repository: https://github.com/wg-perception/people.git
+- release repository: https://github.com/OSUrobotics/people-release.git
+- rosdistro version: `1.1.0-1`
+- old version: `1.1.0-1`
+- new version: `1.1.2-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.6`
+- catkin_pkg version: `0.4.8`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.9`
+- vcstools version: `0.1.40`
+
+
 ## people (melodic) - 1.1.1-0
 
 The packages in the `people` repository were released into the `melodic` distro by running `/usr/bin/bloom-release people -r melodic -y` on `Wed, 29 Aug 2018 15:04:41 -0000`
