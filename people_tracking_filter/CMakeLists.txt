@@ -5,7 +5,7 @@ project(people_tracking_filter)
 find_package(PkgConfig)
 pkg_check_modules(BFL REQUIRED orocos-bfl)
 
-include_directories(${BFL_INCLUDE_DIRS})
+include_directories(${BFL_INCLUDE_DIRS}/bfl)
 link_directories(${BFL_LIBRARY_DIRS})
 
 find_package(catkin REQUIRED COMPONENTS
@@ -47,9 +47,9 @@ add_library(people_tracking_filter
             src/sysmodel_vector.cpp
             src/measmodel_pos.cpp
             src/measmodel_vector.cpp
-	    src/tracker_particle.cpp
-	    src/tracker_kalman.cpp
-	    src/detector_particle.cpp
+            src/tracker_particle.cpp
+            src/tracker_kalman.cpp
+            src/detector_particle.cpp
 )
 
 add_executable(people_tracker src/people_tracking_node.cpp)
