@@ -1,3 +1,32 @@
+## people (melodic) - 1.2.0-1
+
+The packages in the `people` repository were released into the `melodic` distro by running `/usr/bin/bloom-release people --ros-distro melodic --edit` on `Mon, 19 Aug 2019 18:02:32 -0000`
+
+These packages were released:
+- `face_detector`
+- `leg_detector`
+- `people`
+- `people_msgs`
+- `people_tracking_filter`
+- `people_velocity_tracker`
+
+Version of package(s) in repository `people`:
+
+- upstream repository: https://github.com/wg-perception/people.git
+- release repository: https://github.com/OSUrobotics/people-release.git
+- rosdistro version: `1.1.2-0`
+- old version: `1.1.2-0`
+- new version: `1.2.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.15.2`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.42`
+
+
 ## people (kinetic) - 1.1.3-1
 
 The packages in the `people` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release people --rosdistro kinetic --edit` on `Fri, 16 Aug 2019 19:21:26 -0000`
