@@ -1,3 +1,29 @@
+## people (noetic) - 1.2.2-1
+
+The packages in the `people` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic people` on `Mon, 21 Sep 2020 18:32:49 -0000`
+
+These packages were released:
+- `people`
+- `people_msgs`
+- `people_velocity_tracker`
+
+Version of package(s) in repository `people`:
+
+- upstream repository: https://github.com/wg-perception/people.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.2.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.8`
+- catkin_pkg version: `0.4.22`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## people (melodic) - 1.2.0-1
 
 The packages in the `people` repository were released into the `melodic` distro by running `/usr/bin/bloom-release people --ros-distro melodic --edit` on `Mon, 19 Aug 2019 18:02:32 -0000`
