@@ -1,0 +1,12 @@
+Source: ros-noetic-people-velocity-tracker
+Section: misc
+Priority: optional
+Maintainer: David V. Lu!! <davidvlu@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-easy-markers, ros-noetic-geometry-msgs, ros-noetic-kalman-filter, ros-noetic-people-msgs, ros-noetic-roslib, ros-noetic-roslint, ros-noetic-rospy
+Homepage: http://ros.org/wiki/people_velocity_tracker
+Standards-Version: 3.9.2
+
+Package: ros-noetic-people-velocity-tracker
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-easy-markers, ros-noetic-geometry-msgs, ros-noetic-kalman-filter, ros-noetic-people-msgs, ros-noetic-roslib, ros-noetic-rospy
+Description: Track the output of the leg_detector to indicate the velocity of person.
