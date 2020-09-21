@@ -1,0 +1,12 @@
+Source: ros-noetic-people
+Section: misc
+Priority: optional
+Maintainer: Dan Lazewatsky <dan@lazewatsky.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://ros.org/wiki/people
+Standards-Version: 3.9.2
+
+Package: ros-noetic-people
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-people-msgs, ros-noetic-people-velocity-tracker
+Description: The people stack holds algorithms for perceiving people from a number of sensors.
