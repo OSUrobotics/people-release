@@ -107,7 +107,7 @@ tracks:
     patches: null
     release_inc: '1'
     release_repo_url: null
-    release_tag: kinetic
+    release_tag: kinetic:{version}
     ros_distro: kinetic
     vcs_type: git
     vcs_uri: https://github.com/wg-perception/people.git
