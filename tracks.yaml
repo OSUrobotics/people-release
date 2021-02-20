@@ -158,7 +158,7 @@ tracks:
     patches: null
     release_inc: '2'
     release_repo_url: null
-    release_tag: melodic
+    release_tag: melodic:{version}
     ros_distro: melodic
     vcs_type: git
     vcs_uri: https://github.com/wg-perception/people.git
