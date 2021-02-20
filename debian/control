@@ -1,0 +1,12 @@
+Source: ros-kinetic-face-detector
+Section: misc
+Priority: optional
+Maintainer: Dan Lazewatsky <dan@lazewatsky.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-catkin, ros-kinetic-cv-bridge, ros-kinetic-geometry-msgs, ros-kinetic-image-geometry, ros-kinetic-image-transport, ros-kinetic-message-filters, ros-kinetic-message-generation, ros-kinetic-people-msgs, ros-kinetic-rosbag, ros-kinetic-roscpp, ros-kinetic-roslaunch, ros-kinetic-roslib, ros-kinetic-roslint, ros-kinetic-rospy, ros-kinetic-rostest, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-std-srvs, ros-kinetic-stereo-image-proc, ros-kinetic-stereo-msgs, ros-kinetic-tf
+Homepage: http://ros.org/wiki/face_detector
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-face-detector
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-cv-bridge, ros-kinetic-dynamic-reconfigure, ros-kinetic-geometry-msgs, ros-kinetic-image-geometry, ros-kinetic-image-transport, ros-kinetic-message-filters, ros-kinetic-message-runtime, ros-kinetic-people-msgs, ros-kinetic-rosbag, ros-kinetic-roscpp, ros-kinetic-roslib, ros-kinetic-rospy, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-std-srvs, ros-kinetic-stereo-image-proc, ros-kinetic-stereo-msgs, ros-kinetic-tf
+Description: Face detection in images.
