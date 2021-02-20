@@ -1,20 +1,8 @@
-People
-======
-Algorithms related to detecting and tracking people using various robot sensors.
+# face_detector
 
-## Documentation
-[http://ros.org/wiki/people](http://ros.org/wiki/people)
+See [the ROS wiki](http://wiki.ros.org/face_detector) for full information.
 
-## Status
-| Distro | Status |
-| ------ | ------ |
-| **Kinetic** | [![Kinetic Build Status](http://build.ros.org/buildStatus/icon?job=Kbin_uX64__people__ubuntu_xenial_amd64__binary)](http://build.ros.org/job/Kbin_uX64__people__ubuntu_xenial_amd64__binary/) |
-| **Melodic** | [![Melodic Build Status](http://build.ros.org/buildStatus/icon?job=Mbin_uB64__people__ubuntu_bionic_amd64__binary)](http://build.ros.org/job/Mbin_uB64__people__ubuntu_bionic_amd64__binary/) |
-| **Dashing** | None |
+## Note about classifier files
+The package is a ROS wrapper around OpenCV's face detection algorithm. You need to provide a classifier configuration file for it to work, specified as the `classifier_filename` ROS parameter.
 
-## Current Branches
- * `kinetic` is used by the ROS `kinetic` distro.
-
- * `melodic` is used by the ROS `melodic` distro.
-
- * `ros2` is used by the ROS2 `dashing` distro.
+Older versions of this package would only accept an absolute path. Now, if the configuration file is not found using the absolute path, it will use check the list of default folders. This can be provided using the `classifier_folders` ROS parameter, or if that is not set, will use the values in `param/default_folders.yaml`.
