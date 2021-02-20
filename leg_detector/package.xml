@@ -1,6 +1,6 @@
 <package format="2">
   <name>leg_detector</name>
-  <version>1.1.3</version>
+  <version>1.4.0</version>
   <description>Leg Detector using a machine learning approach to find leg-like patterns of laser scanner readings.</description>
   <author>Caroline Pantofaru</author>
   <maintainer email="davidvlu@gmail.com">David V. Lu!!</maintainer>
@@ -24,5 +24,7 @@
   <depend>visualization_msgs</depend>
   <exec_depend>laser_filters</exec_depend>
   <exec_depend>map_laser</exec_depend>
+  <test_depend>roslaunch</test_depend>
+  <test_depend>roslint</test_depend>
 
 </package>
