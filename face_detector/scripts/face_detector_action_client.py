@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
 
 import actionlib
 
@@ -33,6 +33,6 @@ if __name__ == '__main__':
         # publish and subscribe over ROS.
         rospy.init_node('face_detector_action_client')
         result = face_detector_client()
-        print('Done action')
+        rospy.loginfo("Done action")
     except rospy.ROSInterruptException:
-        print('Program interrupted before completion')
+        rospy.loginfo("Program interrupted before completion")

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(people_velocity_tracker)
 
 find_package(catkin REQUIRED COMPONENTS
@@ -23,7 +23,7 @@ if(CATKIN_ENABLE_TESTING)
 endif()
 
 install(FILES launch/filtered_tracked_detector.launch launch/tracked_detector.launch
-        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
 )
 
 catkin_install_python(PROGRAMS scripts/static.py scripts/tracker.py

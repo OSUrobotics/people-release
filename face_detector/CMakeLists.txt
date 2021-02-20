@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(face_detector)
 
 find_package(catkin REQUIRED COMPONENTS
@@ -22,7 +22,7 @@ find_package(catkin REQUIRED COMPONENTS
         tf
 )
 
-find_package(Boost REQUIRED COMPONENTS signals system thread)
+find_package(Boost REQUIRED COMPONENTS system thread)
 find_package(OpenCV)
 
 add_action_files(
@@ -64,6 +64,7 @@ add_executable(face_detector
                        src/faces.cpp)
 add_dependencies(face_detector ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
 target_link_libraries(face_detector
+  yaml-cpp
   ${catkin_LIBRARIES}
   ${Boost_LIBRARIES}
   ${OpenCV_LIBRARIES})
@@ -102,8 +103,8 @@ if(CATKIN_ENABLE_TESTING)
 
 #  add_rostest(test/wide-stereo_true_rtest.xml)
 #  add_rostest(test/wide-stereo_false_rtest.xml)
-#  add_rostest(test/rgbd_true_rtest.xml)
-#  add_rostest(test/rgbd_false_rtest.xml)
+  add_rostest(test/rgbd_true_rtest.xml)
+  add_rostest(test/rgbd_false_rtest.xml)
 #  add_rostest(test/narrow-stereo_true_rtest.xml)
 #  add_rostest(test/narrow-stereo_false_rtest.xml)
 #  add_rostest(test/action-wide_true_rtest.xml)

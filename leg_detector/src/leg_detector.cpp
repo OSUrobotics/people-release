@@ -37,9 +37,8 @@
 #include <leg_detector/laser_processor.h>
 #include <leg_detector/calc_leg_features.h>
 
-#include <opencv/cxcore.h>
-#include <opencv/cv.h>
-#include <opencv/ml.h>
+#include <opencv2/core/core_c.h>
+#include <opencv2/ml.hpp>
 
 #include <people_msgs/PositionMeasurement.h>
 #include <people_msgs/PositionMeasurementArray.h>
@@ -66,7 +65,7 @@ static double max_second_leg_age_s     = 2.0;
 static double max_track_jump_m         = 1.0;
 static double max_meas_jump_m          = 0.75;  // 1.0
 static double leg_pair_separation_m    = 1.0;
-static std::string fixed_frame         = "odom_combined";
+static const char* fixed_frame         = "odom_combined";
 
 static double kal_p = 4, kal_q = .002, kal_r = 10;
 static bool use_filter = true;
@@ -336,9 +335,9 @@ public:
     max_track_jump_m         = config.max_track_jump;
     max_meas_jump_m          = config.max_meas_jump;
     leg_pair_separation_m    = config.leg_pair_separation;
-    if (fixed_frame.compare(config.fixed_frame) != 0)
+    if (std::string(fixed_frame).compare(config.fixed_frame) != 0)
     {
-      fixed_frame              = config.fixed_frame;
+      fixed_frame              = config.fixed_frame.c_str();
       laser_notifier_.setTargetFrame(fixed_frame);
       people_notifier_.setTargetFrame(fixed_frame);
     }
