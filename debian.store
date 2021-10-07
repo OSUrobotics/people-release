@@ -1,1 +1,1 @@
-{"trim": "", "base": "4755c7a", "trimbase": "", "parent": "debian/noetic/leg_detector", "previous": "abd3065"}
+{"base": "1223d2e", "parent": "debian/noetic/leg_detector", "previous": "516876a", "trim": "", "trimbase": ""}
