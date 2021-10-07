@@ -1,1 +1,1 @@
-{"trim": "", "base": "bb820e5", "trimbase": "", "parent": "debian/noetic/face_detector", "previous": "c1d564b"}
+{"base": "6e6d2de", "parent": "debian/noetic/face_detector", "previous": "0fef78f", "trim": "", "trimbase": ""}
