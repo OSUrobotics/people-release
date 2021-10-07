@@ -1,0 +1,12 @@
+Source: ros-noetic-people-msgs
+Section: misc
+Priority: optional
+Maintainer: Dan Lazewatsky <dan@lazewatsky.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-geometry-msgs, ros-noetic-message-generation, ros-noetic-std-msgs
+Homepage: http://ros.org/wiki/people_msgs
+Standards-Version: 3.9.2
+
+Package: ros-noetic-people-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-geometry-msgs, ros-noetic-message-runtime, ros-noetic-std-msgs
+Description: Messages used by nodes in the people stack.
