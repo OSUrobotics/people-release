@@ -1,6 +1,6 @@
 <package format="2">
   <name>face_detector</name>
-  <version>1.4.0</version>
+  <version>1.4.2</version>
   <description>Face detection in images.</description>
   <maintainer email="dan@lazewatsky.com">Dan Lazewatsky</maintainer>
 
@@ -29,6 +29,7 @@
   <depend>stereo_image_proc</depend>
   <depend>stereo_msgs</depend>
   <depend>tf</depend>
+  <depend>yaml-cpp</depend>
 
   <build_depend>message_generation</build_depend>
   <build_export_depend>message_runtime</build_export_depend>
